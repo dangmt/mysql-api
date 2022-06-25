@@ -90,7 +90,7 @@ app.post("/video", async (req, res) => {
       "insert into Video (name,numerical_order,problemid) values(?,?,?);",
       [name, numerical_order, problemid]
     );
-  res.json(data[0]);
+  res.json(data);
 });
 app.post("/count", async (req, res) => {
   var result = {};
